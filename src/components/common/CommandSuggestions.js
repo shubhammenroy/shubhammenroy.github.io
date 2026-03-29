@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import "../../styles/terminal.css";
 
 /**
@@ -6,10 +6,18 @@ import "../../styles/terminal.css";
  * Shows inline autocomplete suggestion and available commands
  */
 const CommandSuggestions = React.memo(({ inputValue, suggestion, matches }) => {
+  const suggestionsRef = useRef(null);
+
+  useEffect(() => {
+    if (suggestionsRef.current) {
+      suggestionsRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }, [inputValue, suggestion, matches]);
+
   if (!inputValue || inputValue.trim() === "") return null;
 
   return (
-    <div className="command-suggestions">
+    <div className="command-suggestions" ref={suggestionsRef}>
       {suggestion && inputValue !== suggestion && (
         <div className="suggestion-hint">
           <span className="suggestion-text">
@@ -17,7 +25,7 @@ const CommandSuggestions = React.memo(({ inputValue, suggestion, matches }) => {
           </span>
         </div>
       )}
-      {matches && matches.length > 1 && (
+      {matches && matches.length > 0 && (
         <div className="matches-list">
           <span className="matches-label">Available commands: </span>
           {matches.map((match, index) => (

@@ -22,8 +22,8 @@ const CommandInput = React.memo(({ onAddPrompt, promptHistory, onClearHistory })
   const [inputValue, setInputValue] = useState("");
   const [showSuggestions, setShowSuggestions] = useState(true);
   
-  // Auto-scroll when new prompt added or when user types and suggestions appear
-  const inputRef = useAutoScroll([promptHistory, inputValue, showSuggestions]);
+  // Auto-scroll when new prompt added or when suggestions appear/disappear
+  const inputRef = useAutoScroll([promptHistory, showSuggestions]);
   
   const { navigateToPrevious, navigateToNext, resetNavigation } = useCommandNavigation(promptHistory);
 
