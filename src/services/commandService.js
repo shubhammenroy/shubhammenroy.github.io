@@ -208,30 +208,30 @@ export function getResponse(parsedCommand, executeSideEffects = true) {
         const projects = [
           {
             name: 'B2B Banking Microservices Platform',
-            company: 'Quantiphi Analytics | July 2022 – May 2025',
-            tech: ['java', 'springboot', 'quarkus', 'kubernetes', 'redis', 'mysql', 'aws', 'gcp', 'apigee'],
+            company: 'Quantiphi | July 2022 – April 2025',
+            tech: ['java', 'spring boot', 'quarkus', 'kubernetes', 'redis', 'mysql', 'singlestore', 'aws', 'gcp', 'cloud run'],
             bullets: [
               'Built hybrid microservices to replace a SaaS banking platform — saved clients <span class="highlights">~$250K/pa</span>.',
-              'Migrated 20+ services from AWS to GCP, consolidated 3 databases, reduced costs by <span class="highlights">5x</span>.',
-              'Deployed on Cloud Run + Apigee Gateway for load efficiency and scalability.',
+              'Migrated 20+ services from AWS to GCP, consolidated 3 databases into SingleStore, and reduced costs by <span class="highlights">5x</span>.',
+              'Deployed on Cloud Run for scalability.',
             ]
           },
           {
-            name: 'Generic e-Learning Infrastructure (Google Classroom)',
-            company: 'Quantiphi Analytics',
-            tech: ['google classroom api', 'pub/sub', 'kafka', 'kubernetes', 'docker', 'bigquery', 'redis', 'python'],
+            name: 'e-Learning Platform (Google Classroom)',
+            company: 'Quantiphi',
+            tech: ['fastapi', 'google classroom api', 'gcp pub/sub', 'kubernetes', 'helm', 'docker', 'bigquery', 'redis', 'python'],
             bullets: [
-              'Designed a generic infrastructure for any e-learning ecosystem using Google Classroom and hybrid microservices.',
-              'Built notification, student, classroom, and assignment management services from scratch.',
+              'Built a FastAPI e-learning platform integrating Google Classroom, with notification, user, and assignment services.',
+              'Deployed on Kubernetes/Helm with Redis caching (1-hour TTL), GCP Pub/Sub, and BigQuery for analytics.',
             ]
           },
           {
-            name: 'Kubernetes Observability CRD (kubebuilder)',
+            name: 'Kubernetes Observability CRD (Kubebuilder)',
             company: 'Blue Yonder | May 2025 – Present',
-            tech: ['kubebuilder', 'fastapi', 'azure', 'kubernetes', 'python'],
+            tech: ['go', 'kubebuilder', 'argocd', 'helm', 'fastapi', 'azure', 'kubernetes', 'python'],
             bullets: [
-              'Developed CRD for managing observability resources — reduced manual config by <span class="highlights">40%</span>.',
-              'Built RESTful APIs using FastAPI for Azure and platform resource orchestration.',
+              'Cut manual deployment work by <span class="highlights">80%</span> with GitOps pipelines (ArgoCD) and Kubebuilder CRD operators for core, observability, and Azure resources.',
+              'Built REST APIs for Cloud/Kubernetes provisioning, cutting deployment time by <span class="highlights">70%</span> and recovery time by <span class="highlights">90%</span>.',
             ]
           },
           {
@@ -249,7 +249,7 @@ export function getResponse(parsedCommand, executeSideEffects = true) {
             company: 'Personal Project',
             tech: ['spring boot', 'mysql', 'aws s3', 'ec2', 'java'],
             bullets: [
-              'Built CRM to manage leads, properties, notifications + 3rd party listing integrations.'
+              'Built a CRM to manage leads, properties, notifications, and third-party listing integrations.'
             ]
           },
           {
@@ -257,7 +257,7 @@ export function getResponse(parsedCommand, executeSideEffects = true) {
             company: 'Personal Project',
             tech: ['spring boot', 'sql', 'react', 'java', 'javascript'],
             bullets: [
-              'Developed intranet app for sharing technical knowledge across org members.'
+              'Developed an intranet app for sharing technical knowledge across organisation members.'
             ]
           }
         ];
