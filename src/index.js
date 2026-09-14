@@ -7,7 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 
 // M3NR0Y Signature
 console.log(
-  "%c Built by M3NR0Y %c https://github.com/shubham9672 ",
+  "%c Built by M3NR0Y %c https://github.com/shubhammenroy ",
   "color: white; background: #000; padding: 5px; font-size: 14px; font-weight: bold; border-left: 4px solid #4ee32c;",
   "color: #4ee32c; background: #1a1a1a; padding: 5px; font-size: 14px;"
 );

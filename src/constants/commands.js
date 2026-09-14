@@ -38,7 +38,7 @@ export const COMMANDS = {
           <span class="open-to-work-badge"><span class="pulse-dot"></span> OPEN TO WORK</span>
         </div>
         
-        <p class="hire-intro">I architect backends that scale, migrate systems that save <span style="color: #3fb950">$250K/pa</span>, and write the kind of code your future self won't hate.</p>
+        <p class="hire-intro">I design backends that scale and migrate systems that save <span style="color: #3fb950">$250K/pa</span>.</p>
         
         <div class="hire-scans">
           <div class="scan-line" style="animation-delay: 0ms"><span class="scan-label">checking availability ............</span> <span style="color: #3fb950">✓ available now</span></div>
@@ -56,10 +56,10 @@ export const COMMANDS = {
         </table>
 
         <div class="hire-links scan-line" style="animation-delay: 1600ms">
-          <a href="mailto:shubhammenroy9672@gmail.com?subject=Let's%20work%20together&body=Hey%20Shubham%2C%20I%20found%20your%20portfolio%20and%20wanted%20to%20reach%20out%20about..." class="hire-btn" style="color:#58a6ff; border-color:rgba(88,166,255,0.35);">✉ Email Me</a>
+          <a href="mailto:menroy.shubham@gmail.com?subject=Let's%20work%20together&body=Hey%20Shubham%2C%20I%20found%20your%20portfolio%20and%20wanted%20to%20reach%20out%20about..." class="hire-btn" style="color:#58a6ff; border-color:rgba(88,166,255,0.35);">✉ Email Me</a>
           <a href="https://www.linkedin.com/in/shubham-menroy-a26468238/" target="_blank" rel="noopener noreferrer" class="hire-btn">in LinkedIn</a>
-          <a href="https://github.com/shubham9672" target="_blank" rel="noopener noreferrer" class="hire-btn">gh GitHub</a>
-          <a href="/Portfolio/Shubhammenroy26.pdf" target="_blank" download class="hire-btn">↓ resume.pdf</a>
+          <a href="https://github.com/shubhammenroy" target="_blank" rel="noopener noreferrer" class="hire-btn">gh GitHub</a>
+          <a href="${process.env.PUBLIC_URL || ''}/Shubhammenroy26.pdf" target="_blank" download class="hire-btn">↓ resume.pdf</a>
         </div>
       </div>
     `
@@ -74,13 +74,15 @@ export const COMMANDS = {
     response: `
       <p>
         <span class="highlights">
-          Software Developer | Java • Python • SpringBoot • Cloud (AWS/GCP)
+          Senior Software Engineer | Java • Python • Go • Cloud (AWS/GCP/Azure)
         </span>
       </p>
       <p>
-        Software Developer with 4 years of experience in building scalable, high-performance software.
-        Expertise in Backend development and Cloud (AWS/GCP), with a proven record of optimizing
-        system performance and designing robust architectures. Looking for new challenges and career growth opportunities.
+        Software Engineer with 4.6 years of experience building distributed systems and microservices
+        in Java and Python across AWS, GCP, and Azure. Delivered a <span class="highlights">5x</span> infrastructure
+        cost reduction through database consolidation and cloud migration, and led a production go-live
+        with <span class="highlights">99.999%</span> system availability. Experienced with Spring Boot, Quarkus,
+        Kubernetes, Docker, SQL, and NoSQL databases.
       </p>
     `
   },
@@ -94,24 +96,35 @@ export const COMMANDS = {
   experience: {
     cue: "My experience",
     response: `
-      <dt><b>Software Developer 2 — Blue Yonder</b></dt>
+      <dt><b>Senior Software Engineer — Blue Yonder</b></dt>
       <dd>May 2025 — Present. (Bengaluru)</dd>
       <ul>
-        <li>Developed CRD using <span class="highlights">kubebuilder</span> for managing observability resources, reducing manual configuration effort by <span class="highlights">40%</span>.</li>
-        <li>Built and enhanced RESTful APIs using <span class="highlights">FastAPI</span> to manage Azure, core platform, and observability resources.</li>
-        <li>Implemented Git-based CI/CD for deployment, resource creation &amp; env comparisons, significantly improving release reliability.</li>
+        <li>Cut Elasticsearch load by <span class="highlights">30%</span> and costs by <span class="highlights">40%</span> with a Go Fiber log-export service supporting files up to 10GB+, using HATEOAS part links and chunked streaming via goroutines at 50 RPS.</li>
+        <li>Built REST APIs (~60 RPS, async fire-and-forget provisioning) for Cloud/Kubernetes provisioning, cutting deployment time by <span class="highlights">70%</span> and recovery time by <span class="highlights">90%</span>, with Keycloak OAuth 2.0 and Postgres-based spec storage.</li>
+        <li>Reduced manual setup effort by <span class="highlights">80%</span> with Python CLI tools (Poetry) that generate required files and resources for different runtimes in a single command.</li>
+        <li>Standardized releases with a versioned CI pipeline for Helm packaging and image builds.</li>
+        <li>Cut manual deployment work by <span class="highlights">80%</span> with GitOps pipelines (ArgoCD) and Kubebuilder CRD operators in Go for core, observability, and Azure resources.</li>
+        <li>Resolved production incidents within a 4-hour SLA as L4 support, debugging APIs, Kubernetes resources, and Elasticsearch using logs, Kibana dashboards, and alerts.</li>
+        <li>Built a third-party integration service to collect OpenTelemetry with configurable sampling rates.</li>
+        <li>Implemented monitoring for 13+ Azure resource types, 100+ subscriptions, and MongoDB resources using Kubernetes, Helm, and Elastic Agent.</li>
+        <li>Cut system backpressure by <span class="highlights">80%</span> with a distributed telemetry pipeline (Logstash/OTel collectors) across Kubernetes clusters, integrated with Kafka at 80K events/sec.</li>
+        <li>Achieved <span class="highlights">95%</span> test coverage across Python CLI, FastAPI, and Go Fiber services using Pytest and Behave.</li>
+        <li>Maintained documentation, FAQs, and troubleshooting runbooks used by 1,000+ developers.</li>
         <li>Collaborated with cross-functional platform teams to standardize observability and deployment practices.</li>
       </ul>
 
-      <dt><b>Software Developer — Quantiphi Analytics</b></dt>
-      <dd>July 2022 — May 2025. (Bengaluru)</dd>
+      <dt><b>Software Developer — Quantiphi</b></dt>
+      <dd>July 2022 — April 2025. (Bengaluru)</dd>
       <ul>
-        <li>Developed a B2B application using hybrid microservices to replace a SaaS cloud banking platform, saving clients <span class="highlights">~$250K/pa</span>.</li>
-        <li>Architected core services for disbursement, loan and customer management — reduced processing time by <span class="highlights">50%</span>, increased loan disbursement by <span class="highlights">30%</span>.</li>
-        <li>Implemented Event-driven architecture, JWT auth, RBAC, idempotency checks, cache management — reduced response time by <span class="highlights">20%</span> and duplicate transactions by <span class="highlights">40%</span>.</li>
-        <li>Migrated 20+ microservices from <span class="highlights">AWS to GCP</span>, consolidating 3 databases into one, reducing costs by <span class="highlights">5x</span>.</li>
+        <li>Developed a B2B application using a hybrid microservices architecture (Quarkus/Spring Boot) to replace a SaaS cloud banking platform, saving clients <span class="highlights">~$250K/pa</span>.</li>
+        <li>Designed disbursement, loan, and customer-management services from scratch (~200 RPS at the API layer), reducing processing time by <span class="highlights">50%</span> and increasing loan disbursement by <span class="highlights">60%</span>.</li>
+        <li>Implemented event-driven disbursement (GCP Pub/Sub), idempotency via a loan-ID keyed table, JWT auth, RBAC, scheduled jobs, cache management, and audit logging — cutting duplicate transactions by <span class="highlights">40%</span> and response time by <span class="highlights">20%</span>.</li>
+        <li>Achieved <span class="highlights">85%</span> test coverage across Quarkus/Spring Boot microservices using JUnit, Mockito, and Testcontainers.</li>
+        <li>Led the end-to-end production go-live, with <span class="highlights">99.999%</span> availability and no business disruption.</li>
         <li>Built GitHub CI/CD pipelines that reduced manual effort by <span class="highlights">70%</span> and deployment cycles by <span class="highlights">60%</span>.</li>
-        <li>Spearheaded client interactions, documented requirements, conducted code reviews and managed JIRA tickets using Agile.</li>
+        <li>Migrated 20+ microservices from <span class="highlights">AWS to GCP</span> and consolidated 3 SQL/NoSQL databases into SingleStore, reducing costs by <span class="highlights">5x</span> and improving scalability with Cloud Run.</li>
+        <li>Designed a FastAPI e-learning platform integrating Google Classroom, with notification, user, and assignment services on Kubernetes/Helm, Redis (1-hour TTL), GCP Pub/Sub, and BigQuery.</li>
+        <li>Led client discussions, collaborated with junior developers, conducted code reviews, and managed Jira tickets in an Agile process.</li>
       </ul>
     `
   },
@@ -124,14 +137,15 @@ export const COMMANDS = {
     cue: "My skills",
     response: `
       <table>
-        <tr><td>Languages:</td><td>Java, Python, SQL</td></tr>
-        <tr><td>Frameworks:</td><td>SpringBoot, Quarkus, FastAPI, Hibernate</td></tr>
-        <tr><td>Databases:</td><td>MySQL, SingleStore, Redis, BigQuery, NoSQL</td></tr>
-        <tr><td>Version Control:</td><td>GitHub, Bitbucket, GCSR</td></tr>
-        <tr><td>Tools &amp; Cloud:</td><td>Docker, Kubernetes, AWS, GCP, Postman, Jira, Git</td></tr>
-        <tr><td>Message Brokers:</td><td>PubSub (Kafka), AWS EventBridge</td></tr>
-        <tr><td>Core Competencies:</td><td>Data Structures &amp; Algorithms, OOPs, Solid Principles, Design Patterns</td></tr>
-        <tr><td>Soft Skills:</td><td>Problem-solving, Communication, Leadership, Agile, Team Collaboration</td></tr>
+        <tr><td>Languages:</td><td>Java, Python, Golang, SQL</td></tr>
+        <tr><td>Frameworks:</td><td>Spring Boot, Quarkus, FastAPI, Fiber (Golang), Hibernate, JUnit, Mockito, Pytest, Poetry</td></tr>
+        <tr><td>Cloud Platforms:</td><td>AWS, GCP, Azure</td></tr>
+        <tr><td>Databases:</td><td>MySQL, SingleStore, Redis, BigQuery, Elasticsearch, NoSQL</td></tr>
+        <tr><td>DevOps &amp; Infrastructure:</td><td>Docker, Kubernetes, Helm, GitOps, IaC, ArgoCD, CI/CD</td></tr>
+        <tr><td>Observability &amp; Monitoring:</td><td>OpenTelemetry, Logstash, Kibana, Prometheus</td></tr>
+        <tr><td>Tools/IDEs:</td><td>Postman, Jira, VS Code, IntelliJ IDEA, Cursor, K9s</td></tr>
+        <tr><td>Message Brokers:</td><td>Kafka, Google Pub/Sub, Event Hub, Event Grid</td></tr>
+        <tr><td>Core Competencies:</td><td>System Design, Distributed Systems, Multithreading, Design Patterns, Shell Scripting</td></tr>
       </table>
     `
   },
@@ -145,29 +159,11 @@ export const COMMANDS = {
   project: {
     cue: "My projects",
     response: `
-      <dt><b>B2B Banking Microservices Platform</b></dt>
-      <dd>Quantiphi Analytics | July 2022 – May 2025</dd>
+      <dt><b>Billing and Inventory Management System</b></dt>
+      <dd>Warehouse Management System</dd>
       <ul>
-        <li><span class="highlights">Tech:</span> Java, SpringBoot, Quarkus, Kubernetes, Redis, MySQL, AWS, GCP, Apigee</li>
-        <li>Built hybrid microservices to replace a SaaS banking platform — saved clients <span class="highlights">~$250K/pa</span>.</li>
-        <li>Migrated 20+ services from AWS to GCP, consolidated 3 databases, reduced costs by <span class="highlights">5x</span>.</li>
-        <li>Deployed on Cloud Run + Apigee Gateway for load efficiency and scalability.</li>
-      </ul>
-
-      <dt><b>Generic e-Learning Infrastructure (Google Classroom)</b></dt>
-      <dd>Quantiphi Analytics</dd>
-      <ul>
-        <li><span class="highlights">Tech:</span> Google Classroom API, Pub/Sub (Kafka), Kubernetes, Docker, BigQuery, Redis</li>
-        <li>Designed a generic infrastructure for any e-learning ecosystem using Google Classroom and hybrid microservices.</li>
-        <li>Built notification, student, classroom, and assignment management services from scratch.</li>
-      </ul>
-
-      <dt><b>Kubernetes Observability CRD (kubebuilder)</b></dt>
-      <dd>Blue Yonder | May 2025 – Present</dd>
-      <ul>
-        <li><span class="highlights">Tech:</span> Kubebuilder, FastAPI, Azure, Kubernetes</li>
-        <li>Developed CRD for managing observability resources — reduced manual config by <span class="highlights">40%</span>.</li>
-        <li>Built RESTful APIs using FastAPI for Azure and platform resource orchestration.</li>
+        <li><span class="highlights">Tech:</span> Spring Boot, MySQL, AWS S3, EC2</li>
+        <li>Built a Warehouse Management System to manage inventory, orders, and shipments.</li>
       </ul>
 
       <dt><b>QuestDB — Golang PGWire Test Suite</b> <span style="color: #58a6ff; font-size: 11px; border: 1px solid rgba(88,166,255,0.3); border-radius: 4px; padding: 1px 4px; margin-left: 6px; vertical-align: top;">open-source</span></dt>
@@ -183,14 +179,14 @@ export const COMMANDS = {
       <dd>CRM to manage leads, properties, and notifications</dd>
       <ul>
         <li><span class="highlights">Tech:</span> Spring Boot, MySQL, AWS S3, EC2</li>
-        <li>Built CRM to manage leads, properties, notifications + 3rd party listing integrations.</li>
+        <li>Built a CRM to manage leads, properties, notifications, and third-party listing integrations.</li>
       </ul>
 
       <dt><b>Knowledge Management System</b> <span style="color: #3fb950; font-size: 11px; border: 1px solid rgba(63,185,80,0.3); border-radius: 4px; padding: 1px 4px; margin-left: 6px; vertical-align: top;">personal</span></dt>
       <dd>Intranet app for sharing technical knowledge</dd>
       <ul>
         <li><span class="highlights">Tech:</span> Spring Boot, SQL, React</li>
-        <li>Developed intranet app for sharing technical knowledge across org members.</li>
+        <li>Developed an intranet app for sharing technical knowledge across organisation members.</li>
       </ul>
 
     `
@@ -204,9 +200,8 @@ export const COMMANDS = {
     response: `
       <p style='color: #ffff00; font-weight: 500;'>🌐 Open Source Contributions:</p>
       <ul>
-        <li><b>QuestDB:</b> Added Golang integration tests against QuestDB via PGWire protocol. (PR: <a href="https://github.com/questdb/questdb/pull/6298" target="_blank" style="color: #58a6ff;">#6298</a>)</li>
-        <li><b>Google Cloud Learning Platform:</b> Core contributor to an official Google open-source e-learning platform. Architected the notification system and contributed across classroom, student, and assignment services. Deployed under GoogleCloudPlatform GitHub org. (Repo: <a href="https://github.com/GoogleCloudPlatform/cloud-learning-platform" target="_blank" style="color: #58a6ff;">GoogleCloudPlatform/cloud-learning-platform</a>). Same LMS built at Quantiphi — now open-source under Google's org.</li>
-        <li><b>Hacktoberfest Contributor:</b> 2020, 2021 &amp; 2022 (Digital Ocean).</li>
+        <li><b>QuestDB:</b> Added Go integration tests against QuestDB via the PGWire protocol. (PR: <a href="https://github.com/questdb/questdb/pull/6298" target="_blank" style="color: #58a6ff;">#6298</a>)</li>
+        <li><b>Google Cloud Learning Platform:</b> Core contributor to an official Google open-source e-learning platform. Designed the notification system and contributed to classroom, student, and assignment services. Deployed under the GoogleCloudPlatform GitHub organisation. (Repo: <a href="https://github.com/GoogleCloudPlatform/cloud-learning-platform" target="_blank" style="color: #58a6ff;">GoogleCloudPlatform/cloud-learning-platform</a>). Same LMS built at Quantiphi; now open-source under Google's organisation.</li>
       </ul>
     `
   },
@@ -254,15 +249,19 @@ export const COMMANDS = {
       <table>
         <tr>
           <td>Email:</td>
-          <td><a target="_blank" rel="noopener noreferrer" href="mailto:shubhammenroy9672@gmail.com" style="text-decoration: none; color:yellow;">shubhammenroy9672@gmail.com</a></td>
+          <td><a target="_blank" rel="noopener noreferrer" href="mailto:menroy.shubham@gmail.com" style="text-decoration: none; color:yellow;">menroy.shubham@gmail.com</a></td>
         </tr>
         <tr>
           <td>Phone:</td>
-          <td><a target="_blank" rel="noopener noreferrer" href="tel:+916375405506" style="text-decoration: none; color:yellow;">+91 6375405506</a></td>
+          <td><a target="_blank" rel="noopener noreferrer" href="tel:+919672180700" style="text-decoration: none; color:yellow;">+91-9672180700</a></td>
+        </tr>
+        <tr>
+          <td>GitHub:</td>
+          <td><a target="_blank" rel="noopener noreferrer" href="https://github.com/shubhammenroy" style="text-decoration: none; color:yellow;">github.com/shubhammenroy</a></td>
         </tr>
         <tr>
           <td>LinkedIn:</td>
-          <td><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shubham-menroy/" style="text-decoration: none; color:yellow;">linkedin.com/in/shubham-menroy</a></td>
+          <td><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shubham-menroy-a26468238/" style="text-decoration: none; color:yellow;">linkedin.com/in/shubham-menroy-a26468238</a></td>
         </tr>
       </table>
     `
@@ -278,19 +277,19 @@ export const COMMANDS = {
       <table>
         <tr>
           <td>Email:</td>
-          <td><a target="_blank" rel="noopener noreferrer" href="mailto:shubhammenroy9672@gmail.com" style="text-decoration: none; color:yellow;">shubhammenroy9672@gmail.com</a></td>
+          <td><a target="_blank" rel="noopener noreferrer" href="mailto:menroy.shubham@gmail.com" style="text-decoration: none; color:yellow;">menroy.shubham@gmail.com</a></td>
         </tr>
         <tr>
-          <td>Whatsapp:</td>
-          <td><a target="_blank" rel="noopener noreferrer" href="tel:+916375405506" style="text-decoration: none; color:yellow;">+91 6375405506</a></td>
+          <td>WhatsApp:</td>
+          <td><a target="_blank" rel="noopener noreferrer" href="tel:+919672180700" style="text-decoration: none; color:yellow;">+91-9672180700</a></td>
         </tr>
         <tr>
           <td>LinkedIn:</td>
-          <td><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shubham-menroy-a26468238/" style="text-decoration: none; color:yellow;">linkedin.com/in/shubham-menroy</a></td>
+          <td><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shubham-menroy-a26468238/" style="text-decoration: none; color:yellow;">linkedin.com/in/shubham-menroy-a26468238</a></td>
         </tr>
         <tr>
-          <td>Github:</td>
-          <td><a target="_blank" rel="noopener noreferrer" href="https://github.com/shubham9672" style="text-decoration: none; color:yellow;">github.com/shubham9672</a></td>
+          <td>GitHub:</td>
+          <td><a target="_blank" rel="noopener noreferrer" href="https://github.com/shubhammenroy" style="text-decoration: none; color:yellow;">github.com/shubhammenroy</a></td>
         </tr>
       </table>
     `
@@ -301,7 +300,7 @@ export const COMMANDS = {
     response: `
       <p style='color: #3fb950; font-weight: 500;'>📄 Downloading resume...</p>
       <p style='margin-top: 8px;'>If the download didn't start automatically,
-        <a target="_blank" rel="noopener noreferrer" href="/Portfolio/Shubhammenroy26.pdf"
+        <a target="_blank" rel="noopener noreferrer" href="${process.env.PUBLIC_URL || ''}/Shubhammenroy26.pdf"
            style="text-decoration: none; color: #58a6ff; border-bottom: 1px dotted #58a6ff;">click here</a>.
       </p>
     `
@@ -510,9 +509,9 @@ export const COMMANDS = {
     response: `
       <p style='color: #4ee32c; font-weight: 500;'>🤔 Do I know Go? Let me check...</p>
 
-      <p style='margin-top: 12px; color: #888;'>Scanning skills... Java ✓  Python ✓  SpringBoot ✓  Go...</p>
+      <p style='margin-top: 12px; color: #888;'>Scanning skills... Java ✓  Python ✓  Spring Boot ✓  Go ✓</p>
 
-      <p style='margin-top: 12px;'>Hmm, I've heard of it! Let me try:</p>
+      <p style='margin-top: 12px;'>Yes. Muscle memory still adds Java semicolons:</p>
 
       <pre style='margin-top: 8px; background: rgba(255,255,255,0.04); padding: 10px; border-radius: 4px; border-left: 3px solid #4ee32c;'>
 <span style='color:#888'>// hello.go</span>
@@ -529,7 +528,7 @@ export const COMMANDS = {
       </p>
 
       <p style='margin-top: 10px; color: #888; font-style: italic;'>
-        😅 Apologies... forgot Go doesn't need semicolons. 4 years of Java will do that to you.
+        😅 Apologies... forgot Go doesn't need semicolons. 4.6 years of Java will do that to you.
       </p>
 
       <p style='margin-top: 8px; color: #888; font-style: italic;'>
@@ -537,7 +536,7 @@ export const COMMANDS = {
       </p>
 
       <p style='margin-top: 12px; color: #4ee32c;'>
-        ✅ Skills confirmed: Java, Python, SpringBoot — Go is on the roadmap... right after I unlearn semicolons. 😂
+        ✅ Skills confirmed: Java, Python, Spring Boot, Go (Fiber, Kubebuilder) — still unlearning the semicolon reflex. 😂
       </p>
     `
   },
@@ -563,7 +562,7 @@ export const COMMANDS = {
       <p style='margin-top: 10px; color: #3fb950;'>✅ BUILD SUCCESSFUL in 0.003s</p>
 
       <p style='margin-top: 10px; color: #8b949e; font-style: italic;'>
-        4 years of <span style='color:#d29922'>SpringBoot</span>, <span style='color:#d29922'>Quarkus</span>, and <span style='color:#d29922'>Hibernate</span>.
+        4.6 years of <span style='color:#d29922'>Spring Boot</span>, <span style='color:#d29922'>Quarkus</span>, and <span style='color:#d29922'>Hibernate</span>.
         I dream in AbstractSingletonProxyFactoryBean. 😴
       </p>
 
@@ -600,7 +599,7 @@ greet()</pre>
       </p>
 
       <p style='margin-top: 10px; color: #8b949e; font-style: italic;'>
-        Built high-performance APIs with <span style='color:#d29922'>FastAPI</span> — because Flask was too slow and Django was too opinionated. 🏎️
+        Built APIs with <span style='color:#d29922'>FastAPI</span> — because Flask was too slow and Django was too opinionated. 🏎️
       </p>
 
       <p style='margin-top: 8px; color: #8b949e; font-style: italic;'>
@@ -608,7 +607,7 @@ greet()</pre>
       </p>
 
       <p style='margin-top: 12px; color: #3fb950;'>
-        ✅ Skills confirmed: Python + FastAPI + scripting ninja. Life is short, use Python! 🐍
+        ✅ Skills confirmed: Python, FastAPI, and CLI tooling. Life is short, use Python! 🐍
       </p>
     `
   },
