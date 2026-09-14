@@ -207,31 +207,11 @@ export function getResponse(parsedCommand, executeSideEffects = true) {
         // Project data for filtering
         const projects = [
           {
-            name: 'B2B Banking Microservices Platform',
-            company: 'Quantiphi | July 2022 – April 2025',
-            tech: ['java', 'spring boot', 'quarkus', 'kubernetes', 'redis', 'mysql', 'singlestore', 'aws', 'gcp', 'cloud run'],
+            name: 'Billing and Inventory Management System',
+            company: 'Personal Project',
+            tech: ['spring boot', 'mysql', 'aws s3', 'ec2', 'java'],
             bullets: [
-              'Built hybrid microservices to replace a SaaS banking platform — saved clients <span class="highlights">~$250K/pa</span>.',
-              'Migrated 20+ services from AWS to GCP, consolidated 3 databases into SingleStore, and reduced costs by <span class="highlights">5x</span>.',
-              'Deployed on Cloud Run for scalability.',
-            ]
-          },
-          {
-            name: 'e-Learning Platform (Google Classroom)',
-            company: 'Quantiphi',
-            tech: ['fastapi', 'google classroom api', 'gcp pub/sub', 'kubernetes', 'helm', 'docker', 'bigquery', 'redis', 'python'],
-            bullets: [
-              'Built a FastAPI e-learning platform integrating Google Classroom, with notification, user, and assignment services.',
-              'Deployed on Kubernetes/Helm with Redis caching (1-hour TTL), GCP Pub/Sub, and BigQuery for analytics.',
-            ]
-          },
-          {
-            name: 'Kubernetes Observability CRD (Kubebuilder)',
-            company: 'Blue Yonder | May 2025 – Present',
-            tech: ['go', 'kubebuilder', 'argocd', 'helm', 'fastapi', 'azure', 'kubernetes', 'python'],
-            bullets: [
-              'Cut manual deployment work by <span class="highlights">80%</span> with GitOps pipelines (ArgoCD) and Kubebuilder CRD operators for core, observability, and Azure resources.',
-              'Built REST APIs for Cloud/Kubernetes provisioning, cutting deployment time by <span class="highlights">70%</span> and recovery time by <span class="highlights">90%</span>.',
+              'Built a Warehouse Management System to manage inventory, orders, and shipments.'
             ]
           },
           {

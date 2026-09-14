@@ -159,8 +159,8 @@ export const COMMANDS = {
   project: {
     cue: "My projects",
     response: `
-      <dt><b>Billing and Inventory Management System</b></dt>
-      <dd>Warehouse Management System</dd>
+      <dt><b>Billing and Inventory Management System</b><span style="color: #3fb950; font-size: 11px; border: 1px solid rgba(63,185,80,0.3); border-radius: 4px; padding: 1px 4px; margin-left: 6px; vertical-align: top;">personal</span></dt>
+      <dd>Inventory Management System</dd>
       <ul>
         <li><span class="highlights">Tech:</span> Spring Boot, MySQL, AWS S3, EC2</li>
         <li>Built a Warehouse Management System to manage inventory, orders, and shipments.</li>
